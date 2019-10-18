@@ -40,5 +40,6 @@ install:
   - automated_cron
   - web_page
 themes:
+  - magazine_theme
   - bartik
   - seven
