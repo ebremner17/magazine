@@ -1,0 +1,121 @@
+{
+  "name": "cadets_canada/cadets_canada",
+  "description": "A drupal profile for Cadets Canada",
+  "type": "project",
+  "license": "GPL-2.0-or-later",
+  "repositories": {
+    "drupal": {
+      "type": "composer",
+      "url": "https://packages.drupal.org/8"
+    },
+    "lullabot/entity_browser_block_layout": {
+      "type": "vcs",
+      "url": "https://github.com/lullabot/entity_browser_block_layout.git",
+      "no-api": true
+    },
+    "ebremner17/cadets_canada_theme": {
+      "type": "vcs",
+      "url": "https://github.com/ebremner17/cadets_canada_theme.git"
+    },
+    "ebremner17/cc_alerts": {
+      "type": "vcs",
+      "url": "https://github.com/ebremner17/cc_alerts.git"
+    },
+    "ebremner17/cc_announcements": {
+      "type": "vcs",
+      "url": "https://github.com/ebremner17/cc_announcements.git"
+    },
+    "ebremner17/cc_media": {
+      "type": "vcs",
+      "url": "https://github.com/ebremner17/cc_media.git"
+    },
+    "ebremner17/cc_news": {
+      "type": "vcs",
+      "url": "https://github.com/ebremner17/cc_news.git"
+    },
+    "ebremner17/cc_routine_orders": {
+      "type": "vcs",
+      "url": "https://github.com/ebremner17/cc_routine_orders.git"
+    },
+    "ebremner17/cc_site_controller": {
+      "type": "vcs",
+      "url": "https://github.com/ebremner17/cc_site_controller.git"
+    },
+    "ebremner17/cc_training_pan": {
+      "type": "vcs",
+      "url": "https://github.com/ebremner17/cc_training_plan.git"
+    },
+    "ebremner17/web_page": {
+      "type": "vcs",
+      "url": "https://github.com/ebremner17/web_page.git"
+    }
+  },
+  "conflict": {
+    "drupal/drupal": "*",
+    "drupal-custom-module/drupal-custom-module": "*",
+    "drupal-custom-theme/drupal-custom-theme": "*"
+  },
+  "config": {
+    "secure-http": false,
+    "sort-packages": true,
+    "vendor-dir": "../../vendor"
+  },
+  "minimum-stability": "dev",
+  "require": {
+    "composer/installers": "^1.7",
+    "cweagans/composer-patches": "1.6.3",
+    "oomphinc/composer-installers-extender": "v1.1.2",
+    "drupal/core": "8.7.7",
+    "drupal/devel": "2.1",
+    "drupal/cacheflush": "1.0-beta3",
+    "drupal/config_update": "1.6",
+    "drupal/crop": "2.0-rc1",
+    "drupal/eck": "1.0-alpha5",
+    "drupal/entity_browser": "2.2",
+    "drupal/entity_browser_block": "1.0",
+    "drupal/features": "3.8",
+    "drupal/image_widget_crop": "2.2",
+    "drupal/inline_entity_form": "1.0-rc2",
+    "drupal/layout_builder_modal": "1.0-alpha2",
+    "drupal/layout_builder_restrictions": "2.2",
+    "drupal/layout_builder_styles": "1.0-beta1",
+    "drupal/mailsystem": "4.1",
+    "drupal/pathauto": "1.4",
+    "drupal/publishcontent": "1.1",
+    "drupal/redirect_after_login": "2.5",
+    "drupal/smtp": "1.0-beta4",
+    "drupal/stage_file_proxy": "1.0-beta1",
+    "drupal/twig_field_value": "1.2",
+    "drupal/user_registrationpassword": "1.0-alpha3",
+    "drupal/video_embed_field": "2.2",
+    "drupal/we_megamenu": "1.5",
+    "ebremner17/web_page": "dev-8.x-1.x",
+    "lullabot/entity_browser_block_layout": "master"
+  },
+  "extra": {
+    "installer-types": [
+      "drupal",
+      "drupal-custom-module"
+    ],
+    "installer-paths": {
+      "../../core": [
+        "type:drupal-core"
+      ],
+      "modules/features/{$name}": [
+        "type:drupal-custom-module"
+      ],
+      "modules/contrib/{$name}": [
+        "type:drupal-module"
+      ],
+      "themes/{$name}": [
+        "type:drupal-custom-theme"
+      ]
+    },
+    "patches": {
+      "drupal/eck": {
+        "After 8.7.x core update install profile with ECK config has fatal errors on install": "https://www.drupal.org/files/issues/2019-07-17/%203055007-8-after-8.7-core-update-fatal-errors-on-install-profile-install.patch"
+      }
+    }
+
+  }
+}
