@@ -39,7 +39,6 @@ install:
   - tour
   - automated_cron
   - magazine_site_controller
-  - web_page
 themes:
   - magazine_theme
   - bartik

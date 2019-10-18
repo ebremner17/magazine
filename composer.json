@@ -20,10 +20,6 @@
     "ebremner17/magazine_theme": {
       "type": "vcs",
       "url": "https://github.com/ebremner17/magazine_theme.git"
-    },
-    "ebremner17/web_page": {
-      "type": "vcs",
-      "url": "https://github.com/ebremner17/web_page.git"
     }
   },
   "conflict": {
@@ -67,7 +63,6 @@
     "drupal/we_megamenu": "1.5",
     "ebremner17/magazine_site_controller": "dev-8.x-1.x",
     "ebremner17/magazine_theme": "dev-8.x-1.x",
-    "ebremner17/web_page": "dev-8.x-1.x",
     "lullabot/entity_browser_block_layout": "master"
   },
   "extra": {
