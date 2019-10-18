@@ -20,6 +20,10 @@
     "ebremner17/magazine_theme": {
       "type": "vcs",
       "url": "https://github.com/ebremner17/magazine_theme.git"
+    },
+    "ebremner17/web_page": {
+      "type": "vcs",
+      "url": "https://github.com/ebremner17/web_page.git"
     }
   },
   "conflict": {
