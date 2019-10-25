@@ -38,6 +38,7 @@ install:
   - views_ui
   - tour
   - automated_cron
+  - magazine_media
   - magazine_site_controller
   - magazine_web_page
 themes:

@@ -13,6 +13,10 @@
       "url": "https://github.com/lullabot/entity_browser_block_layout.git",
       "no-api": true
     },
+    "ebremner17/magazine_media": {
+      "type": "vcs",
+      "url": "https://github.com/ebremner17/magazine_media.git"
+    },
     "ebremner17/magazine_site_controller": {
       "type": "vcs",
       "url": "https://github.com/ebremner17/magazine_site_controller.git"
@@ -65,6 +69,7 @@
     "drupal/user_registrationpassword": "1.0-alpha3",
     "drupal/video_embed_field": "2.2",
     "drupal/we_megamenu": "1.5",
+    "ebremner17/magazine_menu": "dev-8.x-1.x",
     "ebremner17/magazine_site_controller": "dev-8.x-1.x",
     "ebremner17/magazine_theme": "dev-8.x-1.x",
     "ebremner17/magazine_web_page": "dev-8.x-1.x",
